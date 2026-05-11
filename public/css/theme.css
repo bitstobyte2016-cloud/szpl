@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root {
+  /* Colors */
+  --orange: #F36A2D;
+  --orange-dark: #E8561B;
+  --orange-light: #FF8A57;
+  --button-hover: #D94D15;
+  --navy: #1E1F24;
+  --footer-main: #111317;
+  --footer-warm: #2A2D34;
+  --bg-main: #F8F5F1;
+  --bg-sec: #F3EEE8;
+  --bg-section: #FCF9F5;
+  --orange-tint: #FFF1E8;
+  --border-main: #E8E8E8;
+  --border-light: #F0F0F0;
+  --border-accent: #FFD2BE;
+  --text-heading: #1F2127;
+  --text-body: #5F6673;
+  --text-muted: #8C94A3;
+  --text-white: #FFFFFF;
+  --text-orange: #F36A2D;
+  --icon-main: #F36A2D;
+  --icon-sec: #72B043;
+  --icon-dark: #1F2127;
+
+  /* Typography */
+  --font-primary: 'Manrope', sans-serif;
+  --font-secondary: 'Inter', sans-serif;
+}
+
+body {
+    font-family: var(--font-primary);
+    background-color: var(--bg-main);
+    color: var(--text-body);
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-heading);
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-heading);
+    transition: color 0.3s ease;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Top Bar */
+.top-bar {
+    background-color: var(--orange);
+    color: var(--text-white);
+    padding: 8px 0;
+    font-size: 0.85rem;
+    font-family: var(--font-secondary);
+}
+
+.top-bar-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.top-bar .tagline i {
+    color: var(--icon-sec); /* Use green icon for leaf as per original theme setup if applicable */
+    margin-right: 5px;
+}
+
+/* Main Header */
+.main-header {
+    background-color: var(--bg-main);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 60px; /* Adjust based on actual logo size */
+    width: auto;
+}
+
+/* Navigation */
+.main-nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+.main-nav a {
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    color: var(--orange);
+}
+
+.main-nav .dropdown a i {
+    font-size: 0.8rem;
+    margin-left: 5px;
+}
+
+/* Header Actions */
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-actions .icon-link {
+    color: var(--text-heading);
+    font-size: 1.1rem;
+}
+
+.header-actions .icon-link:hover {
+    color: var(--orange);
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--orange);
+    color: var(--text-white);
+}
+
+.btn-primary:hover {
+    background-color: var(--button-hover);
+    color: var(--text-white);
+}
+
+/* Page Content Padding */
+.page-content {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
