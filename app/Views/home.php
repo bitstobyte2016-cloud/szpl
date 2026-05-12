@@ -15,7 +15,13 @@
     <?= view('header') ?>
 
     <main style="font-family: sans-serif;">
-        
+        <section class="home-banner">
+            <div class="home-banner-content">
+                <div class="home-banner-subtitle">SWASTIC ZINC PVT. LTD.</div>
+                <h1 class="home-banner-title">RECYCLING TODAY<br>FOR A BETTER<br><span class="text-orange">TOMORROW</span></h1>
+                <p class="home-banner-text">Leading manufacturer of zinc sulphate since 1995.</p>
+            </div>
+        </section>
     </main>
 
 
