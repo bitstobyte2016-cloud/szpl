@@ -1,1 +1,8 @@
-vendor/
+# Ignore server logs so Jules doesn't get stuck
+*.log
+server.log
+spark.log
+
+# Ignore CodeIgniter logs
+writable/logs/*
+!writable/logs/index.html
