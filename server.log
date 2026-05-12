@@ -1,0 +1,63 @@
+
+CodeIgniter v4.7.2 Command Line Tool - Server Time: 2026-05-12 00:49:36 UTC+05:30
+
+CodeIgniter development server started on http://localhost:8080
+Press Control-C to stop.
+[Mon May 11 19:19:36 2026] PHP 8.3.6 Development Server (http://localhost:8080) started
+[Mon May 11 19:20:24 2026] [::1]:59882 Accepted
+[Mon May 11 19:20:24 2026] [::1]:59882 Closing
+[Mon May 11 19:20:24 2026] [::1]:59888 Accepted
+[Mon May 11 19:20:24 2026] [::1]:59892 Accepted
+[Mon May 11 19:20:24 2026] [::1]:59888 [200]: GET /css/theme.css
+[Mon May 11 19:20:24 2026] [::1]:59892 [200]: GET /Images/logo_t.png
+[Mon May 11 19:20:24 2026] [::1]:59888 Closing
+[Mon May 11 19:20:24 2026] [::1]:59892 Closing
+[Mon May 11 19:20:55 2026] [::1]:56256 Accepted
+[Mon May 11 19:20:55 2026] [::1]:56256 Closing
+[Mon May 11 19:30:31 2026] [::1]:60302 Accepted
+[Mon May 11 19:30:31 2026] [::1]:60302 Closing
+[Mon May 11 19:30:31 2026] [::1]:60306 Accepted
+[Mon May 11 19:30:31 2026] [::1]:60308 Accepted
+[Mon May 11 19:30:31 2026] [::1]:60306 [200]: GET /css/theme.css
+[Mon May 11 19:30:31 2026] [::1]:60308 [200]: GET /Images/logo_t.png
+[Mon May 11 19:30:31 2026] [::1]:60306 Closing
+[Mon May 11 19:30:31 2026] [::1]:60308 Closing
+[Mon May 11 19:40:19 2026] [::1]:55064 Accepted
+[Mon May 11 19:40:19 2026] [::1]:55064 Closing
+[Mon May 11 19:40:19 2026] [::1]:55068 Accepted
+[Mon May 11 19:40:19 2026] [::1]:55080 Accepted
+[Mon May 11 19:40:19 2026] [::1]:55068 [200]: GET /css/theme.css
+[Mon May 11 19:40:19 2026] [::1]:55080 [200]: GET /Images/logo_t.png
+[Mon May 11 19:40:19 2026] [::1]:55068 Closing
+[Mon May 11 19:40:19 2026] [::1]:55080 Closing
+[Mon May 11 19:40:19 2026] [::1]:55096 Accepted
+[Mon May 11 19:40:19 2026] [::1]:55096 [200]: GET /Images/home_banner.png
+[Mon May 11 19:40:19 2026] [::1]:55096 Closing
+[Mon May 11 19:45:47 2026] [::1]:48160 Accepted
+[Mon May 11 19:45:47 2026] [::1]:48160 [200]: GET /css/theme.css
+[Mon May 11 19:45:47 2026] [::1]:48160 Closing
+[Mon May 11 19:46:35 2026] [::1]:35106 Accepted
+[Mon May 11 19:46:35 2026] [::1]:35106 [200]: GET /css/theme.css
+[Mon May 11 19:46:35 2026] [::1]:35106 Closing
+[Mon May 11 19:47:01 2026] [::1]:53440 Accepted
+[Mon May 11 19:47:01 2026] [::1]:53440 Closing
+[Mon May 11 19:47:01 2026] [::1]:53450 Accepted
+[Mon May 11 19:47:01 2026] [::1]:53464 Accepted
+[Mon May 11 19:47:01 2026] [::1]:53450 [200]: GET /css/theme.css
+[Mon May 11 19:47:01 2026] [::1]:53450 Closing
+[Mon May 11 19:47:01 2026] [::1]:53464 [200]: GET /Images/logo_t.png
+[Mon May 11 19:47:01 2026] [::1]:53464 Closing
+[Mon May 11 19:47:01 2026] [::1]:53468 Accepted
+[Mon May 11 19:47:01 2026] [::1]:53468 [200]: GET /Images/home_banner.png
+[Mon May 11 19:47:01 2026] [::1]:53468 Closing
+[Mon May 11 20:01:48 2026] [::1]:52488 Accepted
+[Mon May 11 20:01:48 2026] [::1]:52488 Closing
+[Mon May 11 20:01:48 2026] [::1]:52502 Accepted
+[Mon May 11 20:01:48 2026] [::1]:52516 Accepted
+[Mon May 11 20:01:48 2026] [::1]:52502 [200]: GET /css/theme.css
+[Mon May 11 20:01:48 2026] [::1]:52502 Closing
+[Mon May 11 20:01:48 2026] [::1]:52516 [200]: GET /Images/logo_t.png
+[Mon May 11 20:01:48 2026] [::1]:52516 Closing
+[Mon May 11 20:01:48 2026] [::1]:52524 Accepted
+[Mon May 11 20:01:48 2026] [::1]:52524 [200]: GET /Images/home_banner.png
+[Mon May 11 20:01:48 2026] [::1]:52524 Closing
