@@ -13,8 +13,7 @@
         <h1>Contact Us</h1>
         <p>This is the Contact Us page.</p>
     </main>
-    <footer>
-        <p>&copy; 2024 Kpopmerch.in. All rights reserved.</p>
-    </footer>
+    
+    <?= view('footer') ?>
 </body>
 </html>

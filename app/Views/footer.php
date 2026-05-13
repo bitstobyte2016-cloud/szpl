@@ -15,11 +15,11 @@
         <div class="footer-col">
             <h2>Quick Links</h2>
             <ul class="footer-links">
-                <li><a href="/about_us">About Us</a></li>
+                <li><a href="/about-us">About Us</a></li>
                 <li><a href="/products">Products</a></li>
                 <li><a href="/sustainability">Sustainability</a></li>
                 <li><a href="/career">Careers</a></li>
-                <li><a href="/contact_us">Contact Us</a></li>
+                <li><a href="/contact-us">Contact Us</a></li>
             </ul>
         </div>
 
@@ -39,7 +39,7 @@
             </div>
             <div class="contact-item">
                 <span class="contact-icon">📍</span>
-                <a href="#">Udaipur, Raj.</a>
+                <a href="#">Swastic Zinc Pvt. Ltd.<br>F268, Rd.No 12, Madri Industrial Area<br>Udaipur, Raj.</a>
             </div>
         </div>
 

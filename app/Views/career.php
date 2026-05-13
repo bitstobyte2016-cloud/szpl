@@ -13,8 +13,7 @@
         <h1>Career</h1>
         <p>This is the Career page.</p>
     </main>
-    <footer>
-        <p>&copy; 2024 Kpopmerch.in. All rights reserved.</p>
-    </footer>
+    
+    <?= view('footer') ?>
 </body>
 </html>
