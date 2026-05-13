@@ -181,6 +181,271 @@
             </div>
         </div>
     </section>
+    
+    <!-- process section -->
+    <section class="home-process-section">
+        <div class="container">
+            <div class="home-process-layout">
+                <div class="home-process-content">
+                    <p class="home-process-subtitle">
+                        OUR PROCESS
+                    </p>
+                    <h2 class="home-process-title">
+                        From Waste to
+                        <br>
+                        <span>Value</span>
+                    </h2>
+                    <p class="home-process-description">
+                        Our advanced technology and skilled
+                        team ensure maximum recovery with
+                        zero compromise on quality.
+                    </p>
+                </div>
+
+                <div class="home-process-steps">
+                    <!-- STEP 1 -->
+                    <div class="home-process-step">
+                        <div class="home-process-icon">
+                            <i class="fa-solid fa-truck"></i>
+                        </div>
+                        <div class="home-process-number">
+                            01
+                        </div>
+                        <h3>
+                            Raw Material
+                            <br>
+                            Collection
+                        </h3>
+                    </div>
+
+                    <!-- STEP 2 -->
+                    <div class="home-process-step">
+                        <div class="home-process-icon">
+                            <i class="fa-solid fa-gears"></i>
+                        </div>
+                        <div class="home-process-number">
+                            02
+                        </div>
+                        <h3>
+                            Processing &
+                            <br>
+                            Treatment
+                        </h3>
+                    </div>
+                    <!-- STEP 3 -->
+                    <div class="home-process-step">
+                        <div class="home-process-icon">
+                            <i class="fa-solid fa-flask"></i>
+                        </div>
+                        <div class="home-process-number">
+                            03
+                        </div>
+                        <h3>
+                            Purification &
+                            <br>
+                            Refinement
+                        </h3>
+                    </div>
+
+                    <!-- STEP 4 -->
+                    <div class="home-process-step">
+                        <div class="home-process-icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                        <div class="home-process-number">
+                            04
+                        </div>
+                        <h3>
+                            Quality
+                            <br>
+                            Assurance
+                        </h3>
+                    </div>
+
+                    <!-- STEP 5 -->
+                    <div class="home-process-step">
+                        <div class="home-process-icon">
+                            <i class="fa-solid fa-box"></i>
+                        </div>
+                        <div class="home-process-number">
+                            05
+                        </div>
+                        <h3>
+                            Finished Product
+                            <br>
+                            Dispatch
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- sustaina section -->
+    <section class="home-sustainability-section">
+        <div class="container">
+            <div class="home-sustainability-layout">
+                <div class="home-sustainability-image-wrapper">
+                    <img
+                        src="/Images/home_sus.png"
+                        alt="Sustainability"
+                        class="home-sustainability-image"
+                    >
+                </div>
+                <div class="home-sustainability-content">
+                    <p class="home-sustainability-subtitle">
+                        SUSTAINABILITY
+                    </p>
+                    <h2 class="home-sustainability-title">
+                        Care for
+                        <span> Environment.</span>
+                        <br>
+                        Commitment for
+                        <span> Life.</span>
+                    </h2>
+                    <p class="home-sustainability-description">
+                        We believe in responsible manufacturing that protects
+                        our planet while creating value for future generations.
+                    </p>
+                    <div class="home-sustainability-features">
+                        <div class="home-sus-feature">
+                            <div class="home-sus-icon">
+                                <i class="fa-solid fa-recycle"></i>
+                            </div>
+                            <div>
+                                <h3>
+                                    Eco-Friendly
+                                    <br>
+                                    Processes
+                                </h3>
+                                <p>
+                                    Minimizing waste
+                                    and emissions
+                                </p>
+                            </div>
+                        </div>
+                        <div class="home-sus-feature">
+                            <div class="home-sus-icon">
+                                <i class="fa-solid fa-leaf"></i>
+                            </div>
+                            <div>
+                                <h3>
+                                    Resource
+                                    <br>
+                                    Conservation
+                                </h3>
+                                <p>
+                                    Efficient use of energy
+                                    and resources
+                                </p>
+                            </div>
+                        </div>
+                        <div class="home-sus-feature">
+                            <div class="home-sus-icon">
+                                <i class="fa-solid fa-droplet"></i>
+                            </div>
+                            <div>
+                                <h3>
+                                    Safe & Green
+                                    <br>
+                                    Operations
+                                </h3>
+                                <p>
+                                    Ensuring safety for people
+                                    and environment
+                                </p>
+                            </div>
+                        </div>
+                        <div class="home-sus-feature">
+                            <div class="home-sus-icon">
+                                <i class="fa-solid fa-users"></i>
+                            </div>
+                            <div>
+                                <h3>
+                                    Community
+                                    <br>
+                                    Impact
+                                </h3>
+                                <p>
+                                    Building a better future
+                                    together
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- orange status bar-->
+
+            <div class="home-stats-bar">
+                <div class="home-stat-item">
+                    <div class="home-stat-icon">
+                        <img
+                            src="/Images/ic_indus.png"
+                            alt="Industry"
+                        >
+                    </div>
+                    <div>
+                        <h3>25+</h3>
+                        <p>
+                            Years of
+                            <br>
+                            Industry Experience
+                        </p>
+                    </div>
+                </div>
+                <div class="home-stat-item">
+                    <div class="home-stat-icon">
+                        <img
+                            src="/Images/ic_refine.png"
+                            alt="Industry"
+                        >
+                    </div>
+                    <div>
+                        <h3>0%</h3>
+                        <p>
+                            Precious metal
+                            <br>
+                            dumping
+                        </p>
+                    </div>
+                </div>
+                <div class="home-stat-item">
+                    <div class="home-stat-icon">
+                        <img
+                            src="/Images/ic_medal.png"
+                            alt="Quality"
+                        >
+                    </div>
+                    <div>
+                        <h3>100%</h3>
+                        <p>
+                            Quality
+                            <br>
+                            Assurance
+                        </p>
+                    </div>
+                </div>
+                <div class="home-stat-item">
+                    <div class="home-stat-icon">
+                        <img
+                            src="/Images/ic_iso.png"
+                            alt="ISO"
+                        >
+                    </div>
+                    <div>
+                        <h3>ISO</h3>
+                        <p>
+                            9001:2015
+                            <br>
+                            Certified
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 </main>
 

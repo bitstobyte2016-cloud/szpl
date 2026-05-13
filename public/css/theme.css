@@ -1023,3 +1023,398 @@ h6 {
 .home-product-link:hover {
   color: var(--orange-dark);
 }
+
+/* ========================================
+   HOME PROCESS SECTION
+======================================== */
+
+.home-process-section {
+  padding: 70px 0;
+
+  background: var(--bg-section);
+
+  overflow: hidden;
+}
+
+.home-process-layout {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+
+  gap: 70px;
+
+  align-items: center;
+}
+
+/* ========================================
+   LEFT CONTENT
+======================================== */
+
+.home-process-subtitle {
+  position: relative;
+
+  display: inline-block;
+
+  color: var(--orange);
+
+  font-size: 0.9rem;
+  font-weight: 800;
+
+  letter-spacing: 1.4px;
+
+  margin-bottom: 24px;
+
+  padding-bottom: 12px;
+}
+
+.home-process-subtitle::after {
+  content: '';
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 38px;
+  height: 3px;
+
+  background: var(--orange);
+}
+
+.home-process-title {
+  color: var(--text-heading);
+
+  font-size: 3.4rem;
+  line-height: 1.08;
+  font-weight: 800;
+
+  margin-bottom: 24px;
+}
+
+.home-process-title span {
+  color: var(--orange);
+}
+
+.home-process-description {
+  color: var(--text-body);
+
+  font-size: 1rem;
+  line-height: 1.9;
+
+  max-width: 320px;
+}
+
+/* ========================================
+   PROCESS STEPS
+======================================== */
+
+.home-process-steps {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+
+  gap: 18px;
+
+  position: relative;
+}
+
+.home-process-steps::before {
+  content: '';
+
+  position: absolute;
+  top: 44px;
+  left: 10%;
+
+  width: 80%;
+  height: 2px;
+
+  background:
+    repeating-linear-gradient(
+      to right,
+      var(--orange),
+      var(--orange) 8px,
+      transparent 8px,
+      transparent 16px
+    );
+
+  z-index: 0;
+}
+
+/* ========================================
+   SINGLE STEP
+======================================== */
+
+.home-process-step {
+  position: relative;
+  z-index: 1;
+
+  text-align: center;
+}
+
+/* ========================================
+   ICON
+======================================== */
+
+.home-process-icon {
+  width: 88px;
+  height: 88px;
+
+  margin: 0 auto 18px;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  border: 2px solid #efd8cb;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 2rem;
+
+  color: var(--text-heading);
+}
+
+.home-process-number {
+  color: var(--orange);
+
+  font-size: 1.5rem;
+  font-weight: 800;
+
+  margin-bottom: 14px;
+}
+
+.home-process-step h3 {
+  color: var(--text-heading);
+
+  font-size: 1.05rem;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+/* ========================================
+   HOME SUSTAINABILITY SECTION
+======================================== */
+
+.home-sustainability-section {
+  padding: 75px 0;
+
+  background: #ffffff;
+
+  overflow: hidden;
+}
+
+/* ========================================
+   TOP LAYOUT
+======================================== */
+
+.home-sustainability-layout {
+  display: grid;
+  grid-template-columns: 430px 1fr;
+
+  gap: 70px;
+
+  align-items: center;
+
+  margin-bottom: 55px;
+}
+
+/* ========================================
+   IMAGE
+======================================== */
+
+.home-sustainability-image {
+  width: 100%;
+  height: 420px;
+
+  object-fit: cover;
+
+  border-radius: 26px;
+
+  display: block;
+}
+
+/* ========================================
+   CONTENT
+======================================== */
+
+.home-sustainability-subtitle {
+  position: relative;
+
+  display: inline-block;
+
+  color: var(--orange);
+
+  font-size: 0.9rem;
+  font-weight: 800;
+
+  letter-spacing: 1.4px;
+
+  margin-bottom: 24px;
+
+  padding-bottom: 12px;
+}
+
+.home-sustainability-subtitle::after {
+  content: '';
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 38px;
+  height: 3px;
+
+  background: var(--orange);
+}
+
+.home-sustainability-title {
+  color: var(--text-heading);
+
+  font-size: 3.5rem;
+  line-height: 1.08;
+  font-weight: 800;
+
+  margin-bottom: 24px;
+}
+
+.home-sustainability-title span {
+  color: var(--orange);
+}
+
+.home-sustainability-description {
+  color: var(--text-body);
+
+  font-size: 1rem;
+  line-height: 1.9;
+
+  max-width: 720px;
+
+  margin-bottom: 38px;
+}
+
+/* ========================================
+   FEATURES
+======================================== */
+
+.home-sustainability-features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 26px;
+}
+
+.home-sus-feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.home-sus-icon {
+  flex-shrink: 0;
+
+  color: #79a928;
+
+  font-size: 2rem;
+
+  margin-top: 2px;
+}
+
+.home-sus-feature h3 {
+  color: var(--text-heading);
+
+  font-size: 1rem;
+  line-height: 1.4;
+  font-weight: 800;
+
+  margin-bottom: 10px;
+}
+
+.home-sus-feature p {
+  color: var(--text-body);
+
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* ========================================
+   STATS BAR
+======================================== */
+
+.home-stats-bar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      #f47b45 0%,
+      #f06d38 100%
+    );
+
+  border-radius: 26px;
+
+  overflow: hidden;
+}
+
+.home-stat-item {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+
+  padding: 34px 32px;
+
+  position: relative;
+}
+
+.home-stat-item:not(:last-child)::after {
+  content: '';
+
+  position: absolute;
+  top: 25%;
+  right: 0;
+
+  width: 1px;
+  height: 50%;
+
+  background: rgba(255,255,255,0.25);
+}
+
+/* ========================================
+   STAT ICONS
+======================================== */
+
+.home-stat-icon img {
+  width: 58px;
+  height: 58px;
+
+  object-fit: contain;
+
+  display: block;
+
+  filter:
+    brightness(0)
+    invert(1);
+}
+
+/* ========================================
+   STAT TEXT
+======================================== */
+
+.home-stat-item h3 {
+  color: white;
+
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 800;
+
+  margin-bottom: 10px;
+}
+
+.home-stat-item p {
+  color: rgba(255,255,255,0.92);
+
+  font-size: 0.98rem;
+  line-height: 1.6;
+  font-weight: 600;
+}
