@@ -1,4 +1,4 @@
-# Ignore server logs so Jules doesn't get stuck
+# Ignore server logs so the AI agent doesn't get stuck
 *.log
 server.log
 spark.log
