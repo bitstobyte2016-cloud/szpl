@@ -458,3 +458,38 @@ h6 {
     padding: 60px 0;
   }
 }
+
+.top-bar-left p,
+.top-bar-right p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.topbar-icon {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+.header-logo img {
+  height: 65px;
+  width: auto;
+  display: block;
+}
+
+.main-nav ul {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.main-nav li {
+  position: relative;
+}
+
+.main-nav a,
+.main-nav a:hover,
+.main-nav a.active {
+  color: var(--orange);
+}
