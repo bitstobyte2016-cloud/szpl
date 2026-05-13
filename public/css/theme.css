@@ -129,7 +129,7 @@ h6 {
 
 .container {
   width: 100%;
-  max-width: var(--container-width);
+  max-width: 1500px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -340,7 +340,7 @@ h6 {
 
   background: var(--bg-main);
 
-  box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+  box-shadow: none;
 }
 
 .header-container {
@@ -433,32 +433,46 @@ h6 {
 ======================================== */
 
 .main-footer {
-  position: sticky;
-
   background: var(--footer-main);
-
   color: rgba(255,255,255,0.75);
 
+  width: 100%;
+
   padding-top: 70px;
+  margin-top: 0;
 
   overflow: hidden;
 }
 
+/* ========================================
+   FOOTER LAYOUT
+======================================== */
+
 .footer-top {
-  display: grid;
-  grid-template-columns: 1.3fr 1fr 1.2fr;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
   gap: 80px;
 
   padding-bottom: 50px;
+}
+
+.footer-brand,
+.footer-links,
+.footer-contact {
+  flex: 1;
 }
 
 .footer-brand h3,
 .footer-links h4,
 .footer-contact h4 {
   color: white;
-
   margin-bottom: 20px;
 }
+
+/* ========================================
+   FOOTER LOGO
+======================================== */
 
 .footer-logo {
   display: inline-block;
@@ -466,10 +480,15 @@ h6 {
 }
 
 .footer-logo img {
-  height: 90px;
-  width: auto;
+  width: 110px;
+  height: auto;
   object-fit: contain;
+  display: block;
 }
+
+/* ========================================
+   FOOTER TEXT
+======================================== */
 
 .footer-brand p {
   line-height: 1.8;
@@ -491,7 +510,6 @@ h6 {
   height: 40px;
 
   border-radius: 50%;
-
   border: 1px solid rgba(255,255,255,0.12);
 
   display: flex;
@@ -512,7 +530,7 @@ h6 {
 }
 
 /* ========================================
-   FOOTER LINKS
+   LINKS
 ======================================== */
 
 .footer-links ul,
@@ -524,7 +542,6 @@ h6 {
 
 .footer-links a {
   color: rgba(255,255,255,0.72);
-
   transition: var(--transition);
 }
 
@@ -581,6 +598,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   gap: 20px;
 
   font-size: 0.92rem;
@@ -600,4 +618,408 @@ h6 {
   color: var(--orange);
 }
 
+/* ========================================
+   HOME BANNER
+======================================== */
 
+.home-banner {
+  position: relative;
+
+  height: 520px;
+
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+
+  background: #000;
+}
+
+.home-banner-content {
+  position: relative;
+  z-index: 3;
+
+  max-width: 620px;
+
+  padding: 80px 0 70px;
+}
+
+.home-banner-title {
+  font-size: 4.5rem;
+  line-height: 1.02;
+  color:white;
+  margin-bottom: 24px;
+}
+
+.home-banner-description {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: white;
+  max-width: 520px;
+}
+
+.home-banner-image {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  z-index: 0;
+}
+/* ========================================
+   DARK OVERLAY
+======================================== */
+
+.home-banner-overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0,0,0,0.72) 0%,
+      rgba(0,0,0,0.42) 45%,
+      rgba(0,0,0,0.18) 100%
+    );
+
+  z-index: 1;
+}
+
+/* ========================================
+   TOP HEADER BLEED EFFECT
+======================================== */
+
+.home-banner-top-fade {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 180px;
+
+  background:
+    linear-gradient(
+      180deg,
+      var(--bg-main) 0%,
+      rgba(248,245,241,0.92) 18%,
+      rgba(248,245,241,0.55) 40%,
+      rgba(248,245,241,0) 100%
+    );
+
+  z-index: 2;
+}
+
+/* ========================================
+   CONTENT
+======================================== */
+
+.home-banner-subtitle {
+  position: relative;
+
+  display: inline-block;
+
+  color: white;
+
+  font-size: 0.92rem;
+  font-weight: 700;
+
+  letter-spacing: 1.6px;
+
+  margin-bottom: 28px;
+
+  padding-bottom: 14px;
+}
+
+.home-banner-subtitle::after {
+  content: '';
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 42px;
+  height: 3px;
+
+  background: var(--orange);
+}
+
+.home-banner-title span {
+  color: var(--orange);
+}
+
+
+/* ========================================
+   HOME ABOUT SECTION
+======================================== */
+
+.home-about-section {
+  padding: 75px 0;
+
+  background: var(--bg-main);
+
+  overflow: hidden;
+}
+
+.home-about-layout {
+  display: grid;
+  grid-template-columns: 460px 1fr;
+  gap: 70px;
+
+  align-items: center;
+}
+
+.home-about-title {
+  font-size: 3.5rem;
+  line-height: 1.08;
+
+  margin-bottom: 24px;
+}
+
+.home-about-description {
+  font-size: 1rem;
+  line-height: 1.85;
+
+  margin-bottom: 30px;
+}
+
+.home-about-image {
+  width: 100%;
+  height: 430px;
+
+  object-fit: cover;
+
+  border-radius: 28px;
+
+  display: block;
+}
+
+.home-about-subtitle {
+  position: relative;
+
+  display: inline-block;
+
+  color: var(--orange);
+
+  font-size: 0.9rem;
+  font-weight: 800;
+
+  letter-spacing: 1.4px;
+
+  margin-bottom: 28px;
+
+  padding-bottom: 12px;
+}
+
+.home-about-subtitle::after {
+  content: '';
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 38px;
+  height: 3px;
+
+  background: var(--orange);
+}
+
+
+.home-about-title span {
+  color: var(--orange);
+}
+
+
+.home-about-image-wrapper {
+  width: 100%;
+}
+
+/* ========================================
+   HOME PRODUCTS SECTION
+======================================== */
+
+.home-products-section {
+  padding: 75px 0;
+
+  background: #ffffff;
+
+  overflow: hidden;
+}
+
+.home-products-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 40px;
+
+  margin-bottom: 45px;
+}
+
+.home-products-subtitle {
+  position: relative;
+
+  display: inline-block;
+
+  color: var(--orange);
+
+  font-size: 0.9rem;
+  font-weight: 800;
+
+  letter-spacing: 1.4px;
+
+  margin-bottom: 24px;
+
+  padding-bottom: 12px;
+}
+
+.home-products-subtitle::after {
+  content: '';
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 38px;
+  height: 3px;
+
+  background: var(--orange);
+}
+
+.home-products-title {
+  color: var(--text-heading);
+
+  font-size: 3.5rem;
+  line-height: 1.08;
+  font-weight: 800;
+}
+
+.home-products-title span {
+  color: var(--orange);
+}
+
+/* ========================================
+   VIEW ALL BUTTON
+======================================== */
+
+.home-products-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 14px 26px;
+
+  border: 1px solid #d9d9d9;
+  border-radius: 999px;
+
+  color: var(--text-heading);
+
+  font-size: 0.95rem;
+  font-weight: 700;
+
+  transition: var(--transition);
+}
+
+.home-products-btn:hover {
+  border-color: var(--orange);
+  color: var(--orange);
+}
+
+/* ========================================
+   PRODUCTS GRID
+======================================== */
+
+.home-products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 28px;
+}
+
+/* ========================================
+   PRODUCT CARD
+======================================== */
+
+.home-product-card {
+  background: #ffffff;
+
+  border-radius: 24px;
+
+  overflow: hidden;
+
+  border: 1px solid #ececec;
+
+  transition: var(--transition);
+}
+
+.home-product-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 12px 35px rgba(0,0,0,0.06);
+}
+
+.home-product-image {
+  width: 100%;
+  height: 235px;
+
+  overflow: hidden;
+}
+
+.home-product-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+
+  transition: var(--transition);
+}
+
+.home-product-card:hover .home-product-image img {
+  transform: scale(1.05);
+}
+
+/* ========================================
+   PRODUCT CONTENT
+======================================== */
+
+.home-product-content {
+  padding: 28px;
+}
+
+.home-product-content h3 {
+  color: var(--text-heading);
+
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: 800;
+
+  margin-bottom: 18px;
+}
+
+.home-product-content p {
+  color: var(--text-body);
+
+  font-size: 1rem;
+  line-height: 1.85;
+
+  margin-bottom: 24px;
+}
+
+.home-product-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  color: var(--orange);
+
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.home-product-link:hover {
+  color: var(--orange-dark);
+}

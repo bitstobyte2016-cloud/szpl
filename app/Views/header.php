@@ -12,8 +12,7 @@ $current_url = uri_string();
                 <div class="top-bar-left">
                     <p>
                         <!-- TOP BAR LEFT ICON -->
-                        <img
-                            src="/Images/REPLACE_TOPBAR_ICON" alt="Top Bar Icon" class="topbar-icon" ><i class="fa-brands fa-envira"></i>
+                        <i class="fa-brands fa-envira"></i>
                         Sustainable Zinc Solutions for a Better Tomorrow.
                     </p>
                 </div>
@@ -41,23 +40,42 @@ $current_url = uri_string();
                 <nav class="main-nav" id="mainNav">
                     <ul>
                         <li>
-                            <a href="/" class="active">Home</a>
+                            <a href="/"
+                               class="<?= uri_string() == '' ? 'active' : '' ?>">
+                                Home
+                            </a>
                         </li>
                         <li>
-                            <a href="/about_us">About Us</a>
+                            <a href="/about_us"
+                               class="<?= uri_string() == 'about_us' ? 'active' : '' ?>">
+                                About Us
+                            </a>
                         </li>
                         <li>
-                            <a href="/products">Products</a>
+                            <a href="/products"
+                               class="<?= uri_string() == 'products' ? 'active' : '' ?>">
+                                Products
+                            </a>
                         </li>
                         <li>
-                            <a href="/sustainability">Sustainability</a>
+                            <a href="/sustainability"
+                               class="<?= uri_string() == 'sustainability' ? 'active' : '' ?>">
+                                Sustainability
+                            </a>
                         </li>
                         <li>
-                            <a href="/careers">Careers</a>
+                            <a href="/careers"
+                               class="<?= uri_string() == 'quality' ? 'active' : '' ?>">
+                                Careers
+                            </a>
                         </li>
                         <li>
-                            <a href="/contact_us">Contact Us</a>
+                            <a href="/contact_us"
+                               class="<?= uri_string() == 'contact_us' ? 'active' : '' ?>">
+                                Contact Us
+                            </a>
                         </li>
+
                     </ul>
                 </nav>
             </div>
