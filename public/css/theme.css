@@ -346,14 +346,21 @@ h6 {
 .header-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-
   min-height: 92px;
+  gap: 50px;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
 }
 
 .header-logo img {
-  height: 62px;
+  height: 58px;
   width: auto;
+  max-width: 220px;
+  object-fit: contain;
   display: block;
 }
 
@@ -361,9 +368,14 @@ h6 {
    NAVIGATION
 ======================================== */
 
+.main-nav {
+  flex: 1;
+}
+
 .main-nav ul {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   gap: 38px;
 }
 
@@ -415,4 +427,177 @@ h6 {
   padding-left: 24px;
   padding-right: 24px;
 }
+
+/* ========================================
+   FOOTER
+======================================== */
+
+.main-footer {
+  position: sticky;
+
+  background: var(--footer-main);
+
+  color: rgba(255,255,255,0.75);
+
+  padding-top: 70px;
+
+  overflow: hidden;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1.2fr;
+  gap: 80px;
+
+  padding-bottom: 50px;
+}
+
+.footer-brand h3,
+.footer-links h4,
+.footer-contact h4 {
+  color: white;
+
+  margin-bottom: 20px;
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.footer-logo img {
+  height: 90px;
+  width: auto;
+  object-fit: contain;
+}
+
+.footer-brand p {
+  line-height: 1.8;
+  margin-bottom: 24px;
+}
+
+/* ========================================
+   SOCIAL ICONS
+======================================== */
+
+.footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.footer-socials a {
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+
+  border: 1px solid rgba(255,255,255,0.12);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: var(--transition);
+}
+
+.footer-socials a:hover {
+  border-color: var(--orange);
+  background: rgba(255,255,255,0.05);
+}
+
+.footer-socials img {
+  width: 18px;
+  height: 18px;
+}
+
+/* ========================================
+   FOOTER LINKS
+======================================== */
+
+.footer-links ul,
+.footer-contact ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-links a {
+  color: rgba(255,255,255,0.72);
+
+  transition: var(--transition);
+}
+
+.footer-links a:hover {
+  color: var(--orange);
+}
+
+/* ========================================
+   CONTACT INFO
+======================================== */
+
+.footer-contact li {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+
+  line-height: 1.8;
+}
+
+.footer-contact-icon {
+  width: 38px;
+  height: 38px;
+
+  border-radius: 50%;
+
+  background: rgba(255,255,255,0.05);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+}
+
+.footer-contact-icon img {
+  width: 16px;
+  height: 16px;
+}
+
+.footer-contact a,
+.footer-contact span {
+  color: rgba(255,255,255,0.72);
+}
+
+/* ========================================
+   FOOTER BOTTOM
+======================================== */
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.08);
+
+  padding: 24px 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+  font-size: 0.92rem;
+}
+
+.footer-bottom-links {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.footer-bottom-links a {
+  color: rgba(255,255,255,0.72);
+}
+
+.footer-bottom-links a:hover {
+  color: var(--orange);
+}
+
 
