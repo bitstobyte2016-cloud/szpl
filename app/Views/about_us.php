@@ -17,6 +17,8 @@
 <body>
     <?= view('header') ?>
     <main>
+        
+        <!-- banner image -->
         <section class="about-hero">
             <div class="about-hero-container">
                 <div class="about-hero-left">
@@ -64,6 +66,29 @@
                 </div>
             </div>
         </section>
+        
+        <!-- about section -->
+        <section class="story-section">
+            <div class="story-container">
+                <div class="story-left">
+                    <div class="subtitle-wrap">
+                        <span class="subtitle">OUR STORY</span>
+                        <div class="underline-orange"></div>
+                    </div>
+                    <h2>A Legacy of <span style="color: var(--orange);">Excellence.</span></h2>
+                    <p>Founded in 1995, Swastic Zinc Pvt. Ltd. has grown from a visionary start-up to one of India's leading manufacturers and exporters of Zinc Sulphate Heptahydrate and recycled metals.</p>
+                    <p>With over 30 years of expertise, we combine advanced technology, skilled people, and sustainable practices to create value for industries and communities.</p>
+                    <p>Our state-of-the-art manufacturing facility in Udaipur, Rajasthan is equipped with advanced technology for zinc and copper recovery, refining, and processing.</p>
+                </div>
+                <div class="story-right">
+                    <div class="story-image-wrap">
+                        <img src="/Images/logo_t.png" alt="Swastic Zinc Logo">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
     </main>
     <?= view('footer') ?>
 </body>

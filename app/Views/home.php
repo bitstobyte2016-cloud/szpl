@@ -24,6 +24,23 @@
         </section>
     </main>
 
+    <section class="about-section" id="about">
+  <div class="about-inner">
+    <div class="about-content">
+      <h2 class="about-heading">ABOUT SZPL</h2>
+      <p class="about-subheading">Committed to Quality. Driven by Sustainability.</p>
+      <p class="about-text">
+        Swastic Zinc Pvt. Ltd. is a pioneer in zinc manufacturing and metal recovery with a focus on environmental responsibility, innovation and customer satisfaction.
+      </p>
+      <a class="btn btn-primary about-cta" href="/about-us" aria-label="Know more about Swastic Zinc Pvt. Ltd.">Know More About Us &rarr;</a>
+    </div>
+
+    <figure class="about-media" aria-hidden="false">
+      <img src="/Images/home_about.png" alt="Industrial facility with zinc processing equipment and safety railings" />
+    </figure>
+  </div>
+</section>
+
 
     <?= view('footer') ?>
 </body>
