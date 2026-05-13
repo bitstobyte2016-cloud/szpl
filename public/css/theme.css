@@ -303,13 +303,10 @@ h6 {
 /* ========================================
    TOP BAR
 ======================================== */
-
 .top-bar {
-  background-color: var(--orange);
+  background: var(--orange);
   color: var(--text-white);
-
-  padding: 8px 0;
-
+  padding: 10px 0;
   font-size: 0.85rem;
   font-family: var(--font-secondary);
 }
@@ -320,11 +317,18 @@ h6 {
   justify-content: space-between;
 }
 
-.top-bar .tagline i {
-  color: var(--icon-sec);
-  margin-right: 5px;
+.top-bar-left p,
+.top-bar-right p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
+.topbar-icon {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
 /* ========================================
    HEADER
 ======================================== */
@@ -334,9 +338,9 @@ h6 {
   top: 0;
   z-index: 1000;
 
-  background-color: var(--bg-main);
+  background: var(--bg-main);
 
-  box-shadow: var(--shadow-sm);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.04);
 }
 
 .header-container {
@@ -344,12 +348,13 @@ h6 {
   align-items: center;
   justify-content: space-between;
 
-  padding: 12px 0;
+  min-height: 92px;
 }
 
-.logo img {
-  height: 60px;
+.header-logo img {
+  height: 62px;
   width: auto;
+  display: block;
 }
 
 /* ========================================
@@ -358,12 +363,18 @@ h6 {
 
 .main-nav ul {
   display: flex;
-  gap: 30px;
+  align-items: center;
+  gap: 38px;
 }
 
 .main-nav a {
-  font-size: 0.95rem;
-  font-weight: 600;
+  position: relative;
+
+  font-size: 0.96rem;
+  font-weight: 700;
+  color: var(--text-heading);
+
+  transition: var(--transition);
 }
 
 .main-nav a:hover,
@@ -371,9 +382,24 @@ h6 {
   color: var(--orange);
 }
 
-.main-nav .dropdown a i {
-  font-size: 0.8rem;
-  margin-left: 5px;
+.main-nav a::after {
+  content: '';
+
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+
+  width: 0;
+  height: 2px;
+
+  background: var(--orange);
+
+  transition: var(--transition);
+}
+
+.main-nav a:hover::after,
+.main-nav a.active::after {
+  width: 100%;
 }
 
 /* ========================================
@@ -383,113 +409,10 @@ h6 {
 .header-actions {
   display: flex;
   align-items: center;
-  gap: 20px;
 }
 
-.icon-link {
-  color: var(--text-heading);
-  font-size: 1.1rem;
-  transition: var(--transition);
+.header-cta {
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
-.icon-link:hover {
-  color: var(--orange);
-}
-
-/* ========================================
-   SPACING UTILITIES
-======================================== */
-
-.mt-0 { margin-top: 0; }
-.mb-0 { margin-bottom: 0; }
-
-.mt-1 { margin-top: 10px; }
-.mb-1 { margin-bottom: 10px; }
-
-.mt-2 { margin-top: 20px; }
-.mb-2 { margin-bottom: 20px; }
-
-.mt-3 { margin-top: 30px; }
-.mb-3 { margin-bottom: 30px; }
-
-.mt-4 { margin-top: 40px; }
-.mb-4 { margin-bottom: 40px; }
-
-/* ========================================
-   RESPONSIVE
-======================================== */
-
-@media (max-width: 992px) {
-
-  .grid-2,
-  .grid-3,
-  .grid-4 {
-    grid-template-columns: 1fr;
-  }
-
-  .main-nav ul {
-    gap: 20px;
-  }
-}
-
-@media (max-width: 768px) {
-
-  .header-container {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .top-bar-content {
-    flex-direction: column;
-    gap: 10px;
-    text-align: center;
-  }
-
-  .main-nav ul {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .section-title {
-    font-size: 2rem;
-  }
-
-  .section {
-    padding: 60px 0;
-  }
-}
-
-.top-bar-left p,
-.top-bar-right p {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.topbar-icon {
-  width: 18px;
-  height: 18px;
-  object-fit: contain;
-}
-
-.header-logo img {
-  height: 65px;
-  width: auto;
-  display: block;
-}
-
-.main-nav ul {
-  display: flex;
-  align-items: center;
-  gap: 35px;
-}
-
-.main-nav li {
-  position: relative;
-}
-
-.main-nav a,
-.main-nav a:hover,
-.main-nav a.active {
-  color: var(--orange);
-}

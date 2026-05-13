@@ -13,10 +13,7 @@ $current_url = uri_string();
                     <p>
                         <!-- TOP BAR LEFT ICON -->
                         <img
-                            src="/Images/REPLACE_TOPBAR_ICON"
-                            alt="Top Bar Icon"
-                            class="topbar-icon"
-                        >
+                            src="/Images/REPLACE_TOPBAR_ICON" alt="Top Bar Icon" class="topbar-icon" ><i class="fa-brands fa-envira"></i>
                         Sustainable Zinc Solutions for a Better Tomorrow.
                     </p>
                 </div>
