@@ -1418,3 +1418,167 @@ h6 {
   line-height: 1.6;
   font-weight: 600;
 }
+
+
+/* ========================================
+   ABOUT INTRO SECTION
+======================================== */
+
+.about-intro-section {
+  padding: 75px 0;
+
+  background: #ffffff;
+
+  overflow: hidden;
+}
+
+/* ========================================
+   LAYOUT
+======================================== */
+
+.about-intro-layout {
+  display: grid;
+  grid-template-columns: 1fr 520px;
+
+  gap: 80px;
+
+  align-items: center;
+}
+
+/* ========================================
+   LEFT CONTENT
+======================================== */
+
+.about-intro-subtitle {
+  position: relative;
+
+  display: inline-block;
+
+  color: var(--orange);
+
+  font-size: 0.9rem;
+  font-weight: 800;
+
+  letter-spacing: 1.4px;
+
+  margin-bottom: 24px;
+
+  padding-bottom: 12px;
+}
+
+.about-intro-subtitle::after {
+  content: '';
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 38px;
+  height: 3px;
+
+  background: var(--orange);
+}
+
+.about-intro-title {
+  color: var(--text-heading);
+
+  font-size: 4.2rem;
+  line-height: 1.08;
+  font-weight: 800;
+
+  margin-bottom: 32px;
+}
+
+.about-intro-title span {
+  color: var(--orange);
+}
+
+.about-intro-description {
+  color: var(--text-body);
+
+  font-size: 1.12rem;
+  line-height: 1.9;
+
+  max-width: 760px;
+}
+
+/* ========================================
+   RIGHT SIDE CARDS
+======================================== */
+
+.about-intro-cards {
+  background: #ffffff;
+
+  border: 1px solid #eeeeee;
+  border-radius: 24px;
+
+  overflow: hidden;
+
+  box-shadow: 0 8px 24px rgba(0,0,0,0.03);
+}
+
+/* ========================================
+   SINGLE CARD
+======================================== */
+
+.about-info-card {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 22px;
+
+  padding: 28px 30px;
+}
+
+.about-info-card:not(:last-child) {
+  border-bottom: 1px solid #efefef;
+}
+
+/* ========================================
+   ICON
+======================================== */
+
+.about-info-icon {
+  width: 62px;
+  height: 62px;
+
+  border-radius: 18px;
+
+  background: #fff7f2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+}
+
+.about-info-icon img {
+  width: 34px;
+  height: 34px;
+
+  object-fit: contain;
+
+  display: block;
+}
+
+/* ========================================
+   CONTENT
+======================================== */
+
+.about-info-content h3 {
+  color: var(--text-heading);
+
+  font-size: 1.5rem;
+  line-height: 1.2;
+  font-weight: 800;
+
+  margin-bottom: 12px;
+}
+
+.about-info-content p {
+  color: var(--text-body);
+
+  font-size: 1rem;
+  line-height: 1.8;
+}

@@ -33,4 +33,9 @@ class HomeController extends BaseController
     {
         return view('contact_us');
     }
+    
+    //to open the products page with selected product
+    public function product_select(){
+        
+    }
 }
