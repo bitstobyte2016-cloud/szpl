@@ -130,12 +130,184 @@
                 </div>
             </div>
             
-            
-            <div class="story-wave-row">
-                <div class="story-wave-block story-wave-orange"></div>
+            <!-- story section -->
+            <div class="about-story-backgrounds">
+                
+                <div class="story-road-wrapper">
+                    <div class="story-road">
+                        <div class="story-road-line"></div>
+                        <div class="story-tanker" id="storyTanker">
+                            <img
+                                src="/Images/ic_tanker.png"
+                                alt="Tanker"
+                            >
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 1st sub section-->
+               <div class="story-bg-row left">
+                    <img src="/Images/sbg1.png" alt="" class="story-bg">
+                    <div class="story-text-content">
+
+                        <div class="story-number">
+                            01
+                        </div>
+
+                        <h3 class="story-title">
+                            Established Legacy
+                        </h3>
+
+                        <p class="story-description">
+                            Swastic Zinc Pvt. Ltd. is an established
+                            manufacturing company headquartered in Udaipur,
+                            Rajasthan, with over 30 years of industrial
+                            experience. Founded in 1995, the company is
+                            engaged in the manufacturing zinc sulphate and
+                            copper, catering to the needs of agricultural,
+                            chemical, and industrial sectors.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="story-bg-row right">
+                    <img src="/Images/sbg2.png" alt="" class="story-bg">
+                    <div class="story-text-content story-text-right">
+                        <div class="story-number">
+                            02
+                        </div>
+                        <h3 class="story-title">
+                            Technical
+                            <br>
+                            Expertise
+                        </h3>
+                        <p class="story-description">
+                            Over the years, we have developed strong
+                            technical capabilities in hydrometallurgical
+                            processing, zinc and copper chemistry, and metal
+                            recovery operations. Our manufacturing processes
+                            are designed with a focus on controlled reaction
+                            conditions, material efficiency, and consistent
+                            product quality, allowing us to handle complex
+                            metal-bearing materials in a responsible and
+                            systematic manner.
+                        </p>
+                    </div>
+                </div>
+                <div class="story-bg-row left">
+                    <img src="/Images/sbg3.png" alt="" class="story-bg">
+                    <div class="story-text-content story-text-third">
+                        <div class="story-number">
+                            03
+                        </div>
+                        <h3 class="story-title">
+                            Responsible
+                            <br>
+                            Operations
+                        </h3>
+                        <p class="story-description">
+                            We operate with a clear emphasis on
+                            environmental responsibility, safety, and regulatory
+                            compliance. Our facilities and operating practices
+                            align with applicable environmental norms, and we
+                            maintain strict internal controls to ensure reliable
+                            and traceable operations.
+                        </p>
+                    </div>
+                </div>
+                <div class="story-bg-row right">
+                    <img src="/Images/sbg4.png" alt="" class="story-bg">
+                    <div class="story-text-content story-text-fourth">
+                        <div class="story-number">
+                            04
+                        </div>
+                        <h3 class="story-title">
+                            Built on
+                            <br>
+                            Relationships
+                        </h3>
+                        <p class="story-description">
+                            At Swastic Zinc, we believe that long-term success
+                            is built on technical understanding, operational
+                            discipline, and transparent business practices. This
+                            approach has enabled us to establish durable
+                            relationships with fertilizer producers, chemical
+                            manufacturers, and other industrial organizations
+                            over the years.
+                        </p>
+                    </div>
+                </div>
+                <div class="story-bg-row left">
+                    <img src="/Images/sbg5.png" alt="" class="story-bg">
+                    <div class="story-text-content story-text-fifth">
+                        <div class="story-number">
+                            05
+                        </div>
+                        <h3 class="story-title">
+                            Looking
+                            <br>
+                            Ahead
+                        </h3>
+                        <p class="story-description">
+                            With an experienced team, a stable manufacturing
+                            base, and a commitment to continuous
+                            improvement, Swastic Zinc Pvt. Ltd. remains a
+                            dependable partner in zinc sulphate and copper
+                            manufacturing.
+                        </p>
+                    </div>
+                </div>
             </div>
             
+           
         </section>
+        
+        
+        
+        <!-- scripts -->
+        <script>
+
+            const storySection = document.querySelector('.about-story-backgrounds');
+            const tanker = document.getElementById('storyTanker');
+            const road = document.querySelector('.story-road');
+
+            function animateTanker() {
+
+                const rect = storySection.getBoundingClientRect();
+
+                const scrollStart = window.innerHeight;
+                const scrollEnd = -rect.height;
+
+                const totalScroll = scrollStart - scrollEnd;
+                const currentScroll = scrollStart - rect.top;
+
+                let progress = currentScroll / totalScroll;
+
+                progress = Math.max(0, Math.min(progress, 1));
+
+                /* EXACT ROAD TRAVEL */
+
+                const startOffset = 0;
+
+                const endOffset =
+                    road.offsetHeight -
+                    tanker.offsetHeight;
+
+                const moveY =
+                    startOffset +
+                    (progress * endOffset);
+
+                tanker.style.transform =
+                    `translateX(-50%) translateY(${moveY}px)`;
+
+                requestAnimationFrame(animateTanker);
+
+            }
+
+            animateTanker();
+
+        </script>
+        
         
     </main>
     <?= view('footer') ?>
