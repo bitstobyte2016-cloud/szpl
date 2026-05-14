@@ -1582,3 +1582,592 @@ h6 {
   font-size: 1rem;
   line-height: 1.8;
 }
+
+/* ========================================
+   ABOUT STORY SECTION
+======================================== */
+
+.about-story-section {
+  position: relative;
+
+  width: 100%;
+
+  padding: 120px 0 140px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #fff8f3 0%,
+      #fffdf9 100%
+    );
+
+  overflow: hidden;
+}
+
+/* ========================================
+   WAVY TOP
+======================================== */
+
+.about-story-wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 120px;
+
+  overflow: hidden;
+
+  line-height: 0;
+}
+
+.about-story-wave svg {
+  position: relative;
+
+  display: block;
+
+  width: 100%;
+  height: 100%;
+}
+
+.about-story-wave path {
+  fill: #ffffff;
+}
+
+/* ========================================
+   HEADING
+======================================== */
+
+.about-story-heading {
+  margin-bottom: 80px;
+}
+
+.about-story-subtitle {
+  position: relative;
+
+  display: inline-block;
+
+  color: var(--orange);
+
+  font-size: 0.9rem;
+  font-weight: 800;
+
+  letter-spacing: 1.4px;
+
+  margin-bottom: 24px;
+
+  padding-bottom: 12px;
+}
+
+.about-story-subtitle::after {
+  content: '';
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 38px;
+  height: 3px;
+
+  background: var(--orange);
+}
+
+.about-story-title {
+  color: var(--text-heading);
+
+  font-size: 4rem;
+  line-height: 1.08;
+  font-weight: 800;
+}
+
+.about-story-title span {
+  color: var(--orange);
+}
+
+/* ========================================
+   LAYOUT
+======================================== */
+
+.about-story-layout {
+  position: relative;
+
+  width: 100%;
+
+  max-width: 1800px;
+
+  margin: 0 auto;
+
+  padding: 0 80px;
+}
+
+.about-story-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+}
+
+/* ========================================
+   ABOUT STORY SECTION
+======================================== */
+
+.about-story-section {
+  position: relative;
+
+  width: 100%;
+
+  padding: 120px 0 140px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #fff8f3 0%,
+      #fffdf9 100%
+    );
+
+  overflow: hidden;
+}
+
+/* ========================================
+   WAVY TOP
+======================================== */
+
+.about-story-wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 120px;
+
+  overflow: hidden;
+
+  line-height: 0;
+}
+
+.about-story-wave svg {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+}
+
+.about-story-wave path {
+  fill: #ffffff;
+}
+
+/* ========================================
+   HEADING
+======================================== */
+
+.about-story-heading {
+  position: relative;
+
+  z-index: 5;
+
+  margin-bottom: 90px;
+}
+
+.about-story-subtitle {
+  position: relative;
+
+  display: inline-block;
+
+  color: var(--orange);
+
+  font-size: 0.92rem;
+  font-weight: 800;
+
+  letter-spacing: 1.5px;
+
+  margin-bottom: 26px;
+
+  padding-bottom: 12px;
+}
+
+.about-story-subtitle::after {
+  content: '';
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 40px;
+  height: 3px;
+
+  background: var(--orange);
+}
+
+.about-story-title {
+  color: var(--text-heading);
+
+  font-size: 5rem;
+  line-height: 1.02;
+  font-weight: 800;
+}
+
+.about-story-title span {
+  color: var(--orange);
+}
+
+/* ========================================
+   LAYOUT
+======================================== */
+
+.about-story-layout {
+  position: relative;
+
+  width: 100%;
+
+  max-width: 1800px;
+
+  margin: 0 auto;
+
+  padding: 0 80px;
+}
+
+/* ========================================
+   GRID
+======================================== */
+
+.about-story-grid {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 110px;
+
+  width: 100%;
+}
+
+/* ========================================
+   STORY CARD
+======================================== */
+
+.about-story-card {
+  position: relative;
+
+  width: 80%;
+
+  min-height: 360px;
+
+  padding: 0;
+
+  background: transparent;
+
+  overflow: visible;
+
+  box-shadow: none;
+
+  z-index: 2;
+}
+
+/* ========================================
+   INNER SHAPE
+======================================== */
+
+.about-story-content {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+
+  padding: 65px 65px 70px;
+
+  overflow: hidden;
+
+  z-index: 2;
+
+  box-shadow:
+    0 18px 45px rgba(0,0,0,0.05);
+}
+
+/* ========================================
+   ORGANIC SHAPES
+======================================== */
+
+/* ========================================
+   ORANGE CARD
+======================================== */
+
+.story-orange .about-story-content {
+  background:
+    linear-gradient(
+      135deg,
+      #ffe5d5 0%,
+      #fff7f1 55%,
+      #ffffff 100%
+    );
+
+  border-radius:
+    80px 140px 110px 90px /
+    70px 90px 120px 100px;
+}
+
+/* ========================================
+   GREEN CARD
+======================================== */
+
+.story-green .about-story-content {
+  background:
+    linear-gradient(
+      135deg,
+      #edf5de 0%,
+      #f9fcf3 55%,
+      #ffffff 100%
+    );
+
+  border-radius:
+    120px 90px 130px 70px /
+    90px 110px 90px 130px;
+}
+
+/* ========================================
+   BLUE CARD
+======================================== */
+
+.story-blue .about-story-content {
+  background:
+    linear-gradient(
+      135deg,
+      #dcecff 0%,
+      #f6fbff 55%,
+      #ffffff 100%
+    );
+
+  border-radius:
+    100px 130px 90px 120px /
+    120px 90px 130px 90px;
+}
+
+/* ========================================
+   SOFT TEXTURE
+======================================== */
+
+.about-story-content::after {
+  content: '';
+
+  position: absolute;
+  inset: 0;
+
+  background:
+    radial-gradient(
+      circle at 20% 30%,
+      rgba(255,255,255,0.65),
+      transparent 38%
+    ),
+    radial-gradient(
+      circle at 80% 70%,
+      rgba(255,255,255,0.45),
+      transparent 40%
+    );
+
+  opacity: 0.55;
+
+  pointer-events: none;
+}
+
+/* ========================================
+   ALIGNMENT
+======================================== */
+
+.about-story-card:nth-child(odd) {
+  margin-right: auto;
+}
+
+.about-story-card:nth-child(even) {
+  margin-left: auto;
+}
+
+/* ========================================
+   ICON
+======================================== */
+
+.about-story-icon {
+  width: 95px;
+  height: 95px;
+
+  object-fit: contain;
+
+  margin-bottom: 30px;
+
+  position: relative;
+  z-index: 2;
+}
+
+/* ========================================
+   TEXT
+======================================== */
+
+.about-story-content h3 {
+  position: relative;
+  z-index: 2;
+
+  color: var(--text-heading);
+
+  font-size: 2.1rem;
+  line-height: 1.2;
+  font-weight: 800;
+
+  margin-bottom: 22px;
+}
+
+.about-story-content p {
+  position: relative;
+  z-index: 2;
+
+  color: var(--text-body);
+
+  font-size: 1.05rem;
+  line-height: 2;
+}
+
+/* ========================================
+   NUMBER BADGE
+======================================== */
+
+.about-story-number {
+  position: absolute;
+
+  top: 28px;
+
+  width: 74px;
+  height: 74px;
+
+  border-radius: 50%;
+
+  background: var(--orange);
+
+  color: white;
+
+  font-size: 2rem;
+  font-weight: 800;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow:
+    0 12px 30px rgba(255,120,50,0.35);
+
+  z-index: 10;
+}
+
+.about-story-card:nth-child(odd)
+.about-story-number {
+  right: -38px;
+}
+
+.about-story-card:nth-child(even)
+.about-story-number {
+  left: -38px;
+}
+
+/* ========================================
+   CENTER ROAD
+======================================== */
+
+.about-road-wrapper {
+  position: absolute;
+
+  top: 0;
+  left: 50%;
+
+  width: 220px;
+  height: 100%;
+
+  transform: translateX(-50%);
+
+  display: flex;
+  justify-content: center;
+
+  z-index: 3;
+
+  pointer-events: none;
+}
+
+/* ========================================
+   ROAD
+======================================== */
+
+.about-road {
+  position: relative;
+
+  width: 92px;
+  height: 100%;
+
+  background:
+    linear-gradient(
+      180deg,
+      #565656,
+      #343434
+    );
+
+  border-radius: 100px;
+
+  overflow: hidden;
+
+  box-shadow:
+    inset 0 0 20px rgba(255,255,255,0.08),
+    0 10px 40px rgba(0,0,0,0.12);
+}
+
+/* ========================================
+   ROAD CENTER LINE
+======================================== */
+
+.road-line {
+  position: absolute;
+
+  top: 0;
+  left: 50%;
+
+  width: 4px;
+  height: 100%;
+
+  transform: translateX(-50%);
+
+  background:
+    repeating-linear-gradient(
+      to bottom,
+      rgba(255,255,255,0.95) 0,
+      rgba(255,255,255,0.95) 18px,
+      transparent 18px,
+      transparent 38px
+    );
+}
+
+/* ========================================
+   TANKER
+======================================== */
+
+.about-tanker {
+  position: absolute;
+
+  top: 0;
+  left: 50%;
+
+  width: 150px;
+
+  transform:
+    translateX(-50%)
+    translateY(0);
+
+  transition:
+    transform 0.12s linear;
+
+  z-index: 10;
+}
+
+.about-tanker img {
+  width: 100%;
+
+  object-fit: contain;
+
+  display: block;
+
+  filter:
+    drop-shadow(
+      0 15px 25px rgba(0,0,0,0.18)
+    );
+}
