@@ -201,39 +201,25 @@
                 <!-- right side -->
                 <div class="impact-right">
                     <div class="commitment-bg">
-
                         <img
                             src="/Images/sus_1.png"
                             alt="Commitment"
                         >
-
                     </div>
-
-                    <!-- GREEN OVERLAY -->
-
                     <div class="commitment-overlay"></div>
-
-                    <!-- CONTENT -->
-
                     <div class="commitment-content">
-
                         <div class="impact-heading">
-
                             <h2 class="impact-title">
                                 Our Commitment
                             </h2>
-
                         </div>
-
                         <div class="commitment-list">
-
                             <div class="commitment-item">
                                 <i class="fa-regular fa-circle-check"></i>
                                 <p>
                                     Responsible sourcing and ethical recycling
                                 </p>
                             </div>
-
                             <div class="commitment-item">
                                 <i class="fa-regular fa-circle-check"></i>
                                 <p>
@@ -241,7 +227,6 @@
                                     and resource conservation
                                 </p>
                             </div>
-
                             <div class="commitment-item">
                                 <i class="fa-regular fa-circle-check"></i>
                                 <p>
@@ -249,7 +234,6 @@
                                     and global standards
                                 </p>
                             </div>
-
                             <div class="commitment-item no-border">
                                 <i class="fa-regular fa-circle-check"></i>
                                 <p>
@@ -257,15 +241,30 @@
                                     a sustainable tomorrow
                                 </p>
                             </div>
-
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
-
+        </section>
+        
+        <section class="sus-strip-section">
+            <div class="sus-strip-container">
+                <img
+                    src="/Images/ic_hands.png"
+                    alt="Sustainability"
+                    class="sus-strip-icon"
+                >
+                <div class="sus-strip-content">
+                    <h3>
+                        We believe that true progress lies in
+                        responsible industrial practices.
+                    </h3>
+                    <p>
+                        Together, we can build a cleaner,
+                        greener, and sustainable future.
+                    </p>
+                </div>
+            </div>
         </section>
         
     </main>

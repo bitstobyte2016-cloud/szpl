@@ -2525,3 +2525,67 @@ h6 {
 
   opacity: 0.95;
 }
+
+/* ========================================
+   STRIP SECTION
+======================================== */
+
+.sus-strip-section {
+  width: 100vw;
+
+  padding:
+    42px
+    90px;
+
+  background: #ffffff;
+
+  border-top:
+    1px solid rgba(0,0,0,0.06);
+}
+
+/* ========================================
+   CONTAINER
+======================================== */
+
+.sus-strip-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 34px;
+}
+
+/* ========================================
+   ICON
+======================================== */
+
+.sus-strip-icon {
+  width: 86px;
+  height: 86px;
+
+  object-fit: contain;
+
+  flex-shrink: 0;
+}
+
+/* ========================================
+   CONTENT
+======================================== */
+
+.sus-strip-content h3 {
+  color: var(--text-heading);
+
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: 700;
+
+  margin-bottom: 10px;
+}
+
+.sus-strip-content p {
+  color: var(--orange);
+
+  font-size: 1.65rem;
+  line-height: 1.5;
+  font-weight: 700;
+}
