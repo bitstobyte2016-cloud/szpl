@@ -1976,3 +1976,552 @@ h6 {
 
   width: 25%;
 }
+
+/* ========================================
+   SUSTAINABILITY BANNER
+======================================== */
+
+.sus-banner-section {
+  position: relative;
+
+  width: 100%;
+  height: 700px;
+
+  overflow: hidden;
+
+  background: var(--bg-main);
+}
+
+/* ========================================
+   BACKGROUND IMAGE
+======================================== */
+
+.sus-banner-image {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 1;
+}
+
+.sus-banner-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+/* ========================================
+   LEFT OVERLAY
+======================================== */
+
+.sus-banner-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(250,245,239,1) 0%,
+      rgba(250,245,239,0.98) 18%,
+      rgba(250,245,239,0.92) 28%,
+      rgba(250,245,239,0.75) 38%,
+      rgba(250,245,239,0.38) 50%,
+      rgba(250,245,239,0.04) 65%,
+      rgba(250,245,239,0) 100%
+    );
+}
+
+/* ========================================
+   CONTENT
+======================================== */
+
+.sus-banner-content {
+  position: relative;
+
+  z-index: 5;
+
+  width: 42%;
+
+  padding-top: 120px;
+}
+
+/* ========================================
+   SUBTITLE
+======================================== */
+
+.sus-banner-subtitle {
+  position: relative;
+
+  display: inline-block;
+
+  color: var(--orange);
+
+  font-size: 0.95rem;
+  font-weight: 800;
+
+  letter-spacing: 1.5px;
+
+  margin-bottom: 26px;
+
+  padding-bottom: 12px;
+}
+
+.sus-banner-subtitle::after {
+  content: '';
+
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  width: 42px;
+  height: 3px;
+
+  background: var(--orange);
+}
+
+/* ========================================
+   TITLE
+======================================== */
+
+.sus-banner-title {
+  color: var(--text-heading);
+
+  font-size: 5rem;
+  line-height: 1.05;
+  font-weight: 800;
+
+  margin-bottom: 34px;
+}
+
+.sus-banner-title span {
+  color: var(--orange);
+}
+
+/* ========================================
+   DESCRIPTION
+======================================== */
+
+.sus-banner-text {
+  color: var(--text-body);
+
+  font-size: 1.18rem;
+  line-height: 2;
+
+  max-width: 640px;
+}
+
+/* ========================================
+   APPROACH SECTION
+======================================== */
+
+.approach-section {
+    
+    width: 100%;
+    
+  padding: 50px 0;
+
+  background: #ffffff;
+}
+
+/* ========================================
+   HEADING
+======================================== */
+
+.approach-heading {
+  text-align: center;
+
+  max-width: 980px;
+
+  margin: 0 auto 80px;
+}
+
+.approach-title {
+  color: var(--text-heading);
+
+  font-size: 3.5rem;
+  line-height: 1.1;
+  font-weight: 800;
+
+  margin-bottom: 24px;
+}
+
+.approach-text {
+  color: var(--text-body);
+
+  font-size: 1.12rem;
+  line-height: 2;
+}
+
+/* ========================================
+   GRID
+======================================== */
+
+.approach-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 0;
+}
+
+/* ========================================
+   ITEM
+======================================== */
+
+.approach-item {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 28px;
+
+  padding:
+    0
+    34px;
+
+  border-right:
+    1px solid rgba(0,0,0,0.08);
+}
+
+.approach-item:last-child {
+  border-right: none;
+}
+
+/* ========================================
+   ICON
+======================================== */
+
+.approach-icon {
+  width: 78px;
+  height: 78px;
+
+  object-fit: contain;
+
+  flex-shrink: 0;
+
+  filter:
+    saturate(1.2);
+}
+
+/* ========================================
+   CONTENT
+======================================== */
+
+.approach-content h3 {
+  color: var(--text-heading);
+
+  font-size: 1.7rem;
+  line-height: 1.2;
+  font-weight: 700;
+
+  margin-bottom: 16px;
+}
+
+.approach-content p {
+  color: var(--text-body);
+
+  font-size: 1rem;
+  line-height: 2;
+}
+
+/* ========================================
+   IMPACT SECTION
+======================================== */
+
+.impact-section {
+  width: 100%;
+
+  background: #ffffff;
+}
+
+/* ========================================
+   GRID
+======================================== */
+
+.impact-grid {
+  display: grid;
+
+  grid-template-columns:
+    1.1fr 0.9fr;
+}
+
+/* ========================================
+   LEFT / RIGHT
+======================================== */
+
+.impact-left,
+.impact-right {
+  padding:
+    90px
+    80px;
+
+  position: relative;
+}
+
+.impact-left {
+  background: #ffffff;
+}
+
+/* ========================================
+   RIGHT SIDE
+======================================== */
+
+.impact-right {
+  position: relative;
+
+  overflow: hidden;
+
+  min-height: 760px;
+
+  padding:
+    90px
+    80px;
+}
+
+/* ========================================
+   BACKGROUND IMAGE
+======================================== */
+
+.commitment-bg {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 1;
+}
+
+.commitment-bg img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+/* ========================================
+   GREEN OVERLAY
+======================================== */
+
+.commitment-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 2;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(243,248,240,0.96) 0%,
+      rgba(243,248,240,0.92) 28%,
+      rgba(243,248,240,0.84) 52%,
+      rgba(243,248,240,0.68) 72%,
+      rgba(243,248,240,0.52) 100%
+    );
+}
+
+/* ========================================
+   CONTENT
+======================================== */
+
+.commitment-content {
+  position: relative;
+
+  z-index: 5;
+
+  max-width: 620px;
+}
+
+/* ========================================
+   LIST
+======================================== */
+
+.commitment-list {
+  max-width: 560px;
+}
+
+/* ========================================
+   HEADING
+======================================== */
+
+.impact-heading {
+  margin-bottom: 60px;
+}
+
+.impact-title {
+  position: relative;
+
+  display: inline-block;
+
+  color: var(--text-heading);
+
+  font-size: 3rem;
+  line-height: 1.1;
+  font-weight: 800;
+
+  padding-bottom: 18px;
+}
+
+.impact-title::after {
+  content: '';
+
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  width: 44px;
+  height: 3px;
+
+  background: var(--orange);
+}
+
+/* ========================================
+   IMPACT ITEMS
+======================================== */
+
+.impact-items {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+}
+
+.impact-item {
+  padding:
+    0
+    34px;
+
+  border-right:
+    1px solid rgba(0,0,0,0.08);
+}
+
+.impact-item.no-border {
+  border-right: none;
+}
+
+/* ========================================
+   ICON
+======================================== */
+
+.impact-icon {
+  width: 82px;
+  height: 82px;
+
+  object-fit: contain;
+
+  margin-bottom: 28px;
+}
+
+/* ========================================
+   CONTENT
+======================================== */
+
+.impact-content h3 {
+  color: var(--text-heading);
+
+  font-size: 1.8rem;
+  line-height: 1.4;
+  font-weight: 700;
+
+  margin-bottom: 18px;
+}
+
+.impact-content h3 span {
+  display: block;
+
+  color: var(--orange);
+
+  font-size: 3rem;
+  line-height: 1;
+
+  margin-bottom: 12px;
+}
+
+.impact-content p {
+  color: var(--text-body);
+
+  font-size: 1rem;
+  line-height: 2;
+}
+
+/* ========================================
+   COMMITMENT LIST
+======================================== */
+
+.commitment-list {
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 560px;
+}
+
+.commitment-item {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 18px;
+
+  padding:
+    0
+    0
+    24px;
+
+  margin-bottom: 24px;
+
+  border-bottom:
+    1px solid rgba(0,0,0,0.08);
+}
+
+.commitment-item.no-border {
+  border-bottom: none;
+}
+
+/* ========================================
+   ICON
+======================================== */
+
+.commitment-item i {
+  color: var(--orange);
+
+  font-size: 1.35rem;
+
+  margin-top: 4px;
+
+  flex-shrink: 0;
+}
+
+/* ========================================
+   TEXT
+======================================== */
+
+.commitment-item p {
+  color: var(--text-body);
+
+  font-size: 1.05rem;
+  line-height: 2;
+}
+
+/* ========================================
+   IMAGE
+======================================== */
+
+.commitment-image {
+  position: absolute;
+
+  right: 0;
+  bottom: 0;
+
+  width: 340px;
+
+  object-fit: contain;
+
+  opacity: 0.95;
+}
