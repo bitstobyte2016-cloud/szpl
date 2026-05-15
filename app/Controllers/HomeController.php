@@ -38,4 +38,46 @@ class HomeController extends BaseController
     public function product_select(){
         
     }
+    
+    public function sendQuery()
+    {
+        $email =\Config\Services::email();
+
+        $fullName =$this->request->getPost('full_name');
+
+        $phone =$this->request->getPost('phone');
+
+        $userEmail =$this->request->getPost('email');
+
+        $company =$this->request->getPost('company');
+
+        $message =$this->request->getPost('message');
+
+        $body = " Received new query for website. Details are as follows : 
+
+            Full Name: {$fullName}
+
+            Phone Number: {$phone}
+
+            Email Address: {$userEmail}
+
+            Company: {$company}
+
+            Message:
+
+            {$message}";
+
+        $email->setTo('support@swasticzinc.com');
+        $email->setCC("aradhana@swasticzinc.com");
+
+        $email->setSubject('New Website Query' );
+
+        $email->setMessage( nl2br($body));
+
+        if ($email->send()) {
+            return $this->response->setJSON(['success' => true]);
+        }
+
+        return $this->response->setJSON(['success' => false]);
+    }
 }

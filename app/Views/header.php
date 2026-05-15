@@ -63,12 +63,16 @@ $current_url = uri_string();
                                 Sustainability
                             </a>
                         </li>
+                        
+                        <!--
                         <li>
                             <a href="/careers"
                                class="<?= uri_string() == 'quality' ? 'active' : '' ?>">
                                 Careers
                             </a>
                         </li>
+                        
+                        -->
                         <li>
                             <a href="/contact_us"
                                class="<?= uri_string() == 'contact_us' ? 'active' : '' ?>">
