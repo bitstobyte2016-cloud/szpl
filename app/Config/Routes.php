@@ -11,6 +11,8 @@ $routes->get('/products', 'HomeController::products');
 $routes->get('/sustainability', 'HomeController::sustain');
 $routes->get('/careers', 'HomeController::career');
 $routes->get('/contact_us', 'HomeController::contact_us');
+$routes->get('/policy','HomeController::policy');
+$routes->get('/terms','HomeController::terms');
 
 $routes->post(
     'send-contact-query',

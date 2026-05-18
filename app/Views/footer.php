@@ -14,7 +14,7 @@
                 <p>Manufacturer | Recycler</p>
 
                 <div class="footer-socials">
-                    <a href="REPLACE_LINKEDIN_LINK" target="_blank">
+                    <a href="REPLACE_LINKEDIN_LINK" target="_blank" class ="footer-linkedin">
                         <i class="fa-brands fa-linkedin-in"></i>
                     </a>
                 </div>

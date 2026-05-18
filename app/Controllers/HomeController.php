@@ -34,6 +34,14 @@ class HomeController extends BaseController
         return view('contact_us');
     }
     
+    public function policy():string{
+        return view('privacy');
+    }
+    
+    public function terms():string{
+        return view('terms');
+    }
+    
     //to open the products page with selected product
     public function product_select(){
         
