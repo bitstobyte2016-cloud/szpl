@@ -1,6 +1,7 @@
 <footer class="main-footer">
     <div class="container">
         <div class="footer-top">
+            
             <!-- footer comapny brand -->
             <div class="footer-brand">
                 <a href="/" class="footer-logo">
@@ -14,7 +15,7 @@
 
                 <div class="footer-socials">
                     <a href="REPLACE_LINKEDIN_LINK" target="_blank">
-                        <i class="fa-brands fa-square-linkedin"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
                     </a>
                 </div>
             </div>
@@ -39,11 +40,15 @@
                             Sustainability
                         </a>
                     </li>
+                    
+                    <!--
                     <li>
                         <a href="/careers">
                             Careers
                         </a>
                     </li>
+                    -->
+                    
                     <li>
                         <a href="/contact_us">
                             Contact Us
@@ -61,7 +66,6 @@
                         <div class="footer-contact-icon">
                             <i class="fa-solid fa-phone"></i>
                         </div>
-
                         <a href="tel:+919828841623">
                             +91 9828841623
                         </a>
