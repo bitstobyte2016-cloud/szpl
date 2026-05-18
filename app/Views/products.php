@@ -6,100 +6,160 @@
     <title>Products - SZPL</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/css/theme.css">
+    
+    
+    <link
+    rel="icon"
+    type="image/png"
+    href="/Images/logo_trans1.png" >
 </head>
 
 <!-- script for button clicks-->
-    <script>
+   <script>
+        function requestQuote(int ch) {
 
-        document.addEventListener('DOMContentLoaded', () => {
-
-            const items =
-                document.querySelectorAll('.product-list-item');
-
-            const details =
-                document.querySelectorAll('.product-detail');
-
-            /* ========================================
-               HIDE ALL PRODUCTS
-            ========================================= */
-
-            details.forEach(detail => {
-
-                detail.style.display = 'none';
-
-            });
-
-            /* ========================================
-               SHOW FIRST PRODUCT
-            ========================================= */
-
-            const firstProduct =
-                document.getElementById('znso_hepta');
-
-            if (firstProduct) {
-
-                firstProduct.style.display = 'block';
-
+            // TODO:
+            // OPEN QUOTE POPUP
+            switch ch:{
+                case 1: 
             }
 
-            /* ========================================
-               PRODUCT SWITCHING
-            ========================================= */
+        }
 
-            items.forEach(item => {
+</script>
 
-                item.addEventListener('click', () => {
+<script>
 
-                    const target =
-                        item.dataset.product;
+    document.addEventListener('DOMContentLoaded', function () {
 
-                    /* REMOVE ACTIVE */
+        const productItems =
+            document.querySelectorAll('.product-list-item');
 
-                    items.forEach(i => {
+        const productDetails =
+            document.querySelectorAll('.product-detail');
 
-                        i.classList.remove('active');
+        /* ========================================
+           HIDE ALL PRODUCTS
+        ========================================= */
 
-                    });
+        productDetails.forEach(detail => {
 
-                    /* HIDE ALL */
+            detail.style.display = 'none';
 
-                    details.forEach(detail => {
+        });
 
-                        detail.style.display = 'none';
+        /* ========================================
+           REMOVE ACTIVE
+        ========================================= */
 
-                    });
+        productItems.forEach(item => {
 
-                    /* ACTIVATE CURRENT */
+            item.classList.remove('active');
 
-                    item.classList.add('active');
+        });
 
-                    /* SHOW CURRENT PRODUCT */
+        /* ========================================
+           GET PRODUCT FROM URL
+        ========================================= */
 
-                    const current =
-                        document.getElementById(target);
+        const params =
+            new URLSearchParams(window.location.search);
 
-                    if (current) {
+        let selectedProduct =
+            params.get('product');
 
-                        current.style.display = 'block';
+        if (!selectedProduct) {
 
-                    }
+            selectedProduct = 'znso_hepta';
+
+        }
+
+        /* ========================================
+           SHOW INITIAL PRODUCT
+        ========================================= */
+
+        const initialSidebar =
+            document.querySelector(
+                '.product-list-item[data-product="' +
+                selectedProduct +
+                '"]'
+            );
+
+        const initialDetail =
+            document.getElementById(selectedProduct);
+
+        if (initialSidebar) {
+
+            initialSidebar.classList.add('active');
+
+        }
+
+        if (initialDetail) {
+
+            initialDetail.style.display = 'block';
+
+        }
+
+        /* ========================================
+           CLICK EVENTS
+        ========================================= */
+
+        productItems.forEach(item => {
+
+            item.addEventListener('click', function () {
+
+                const target =
+                    this.dataset.product;
+
+                /* REMOVE ACTIVE */
+
+                productItems.forEach(i => {
+
+                    i.classList.remove('active');
 
                 });
+
+                /* HIDE ALL */
+
+                productDetails.forEach(detail => {
+
+                    detail.style.display = 'none';
+
+                });
+
+                /* ACTIVATE */
+
+                this.classList.add('active');
+
+                const current =
+                    document.getElementById(target);
+
+                if (current) {
+
+                    current.style.display = 'block';
+
+                }
+
+                /* UPDATE URL */
+
+                const newUrl =
+                    window.location.pathname +
+                    '?product=' +
+                    target;
+
+                window.history.replaceState(
+                    {},
+                    '',
+                    newUrl
+                );
 
             });
 
         });
 
-        function requestQuote() {
+    });
 
-            // TODO:
-            // OPEN QUOTE POPUP
-
-        }
-
-    </script>
-   
-
+</script>
 
 
 <body>
@@ -167,7 +227,7 @@
 
                         <div
                             class="product-list-item"
-                            data-product="znso_solution">
+                            data-product="znso_sol">
                             <div class="product-list-left">
                                 <img
                                     src="/Images/znso_sol.png"
@@ -377,7 +437,7 @@
                                 </div>
                                 <button
                                     class="product-quote-btn"
-                                    onclick="requestQuote()">
+                                    onclick="requestQuote(1)">
                                     Request a Quote
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </button>
@@ -385,7 +445,7 @@
                     </div>
                     
                     <!-- znso4 solution-->
-                    <div class="product-detail active" id="znso_solution">
+                    <div class="product-detail" id="znso_sol">
                             <h2 class="product-detail-title">
                                 Zinc Sulphate Technical Grade Soultion
                             </h2>
@@ -546,7 +606,7 @@
                                 </div>
                                 <button
                                     class="product-quote-btn"
-                                    onclick="requestQuote()">
+                                    onclick="requestQuote(2)">
                                     Request a Quote
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </button>
@@ -721,7 +781,7 @@
                                 </div>
                                 <button
                                     class="product-quote-btn"
-                                    onclick="requestQuote()">
+                                    onclick="requestQuote(3)">
                                     Request a Quote
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </button>

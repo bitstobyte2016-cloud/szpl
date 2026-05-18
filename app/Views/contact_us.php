@@ -6,33 +6,38 @@
     <title>Contact Us - Kpopmerch.in</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/css/theme.css">
+    
+    
+    <link
+    rel="icon"
+    type="image/png"
+    href="/Images/logo_trans1.png" >
+    
 </head>
 
-
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script>
 
-    document
-        .getElementById('contactForm')
-        .addEventListener('submit', async function(e) {
-        e.preventDefault();
-        const formData =
-            new FormData(this);
-        try {
-            const response = await fetch('/send-contact-query', {
-                method: 'POST',
-                body: formData
-            });
-            const result = await response.json();
-            if (result.success) {
-                alert('Query sent! Our team will get back to you soon.');
-                this.reset();
-            } else {
-                alert('Something went wrong. Please try again.');
-            }
-        } catch (error) {
-            alert('Something went wrong. Please try again.');
-        }
-    });
+    function sendEmail(){
+        
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var phno = document.getElementById("phno").value;
+        var comp = document.getElementById("company").value;
+        var msg = document.getElementById("msg").value;
+        
+        
+	$.post("<?php echo base_url('send-query'); ?>",{name:name,email:email,comp:comp,phno:phno,msg:msg},function(result){
+            alert(result);
+            document.getElementById("name").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("phno").value = "";
+            document.getElementById("company").value = "";
+            document.getElementById("msg").value = "";
+        
+	}); 
+    };
+        
 
 </script>
 
@@ -95,6 +100,7 @@
                                 <input
                                     type="text"
                                     name="full_name"
+                                    id ="name"
                                     placeholder="Enter your full name"
                                     required
                                 >
@@ -106,6 +112,7 @@
                                 <input
                                     type="tel"
                                     name="phone"
+                                    id="phno"
                                     placeholder="Enter your phone number"
                                     required
                                 >
@@ -117,6 +124,7 @@
                                 <input
                                     type="email"
                                     name="email"
+                                    id="email"
                                     placeholder="Enter your email address"
                                     required
                                 >
@@ -128,6 +136,7 @@
                                 <input
                                     type="text"
                                     name="company"
+                                    id="company"
                                     placeholder="Enter your organization name"
                                     required
                                 >
@@ -140,13 +149,14 @@
                             <textarea
                                 name="message"
                                 rows="6"
+                                id="msg"
                                 placeholder="Type your message here..."
                                 required
                             ></textarea>
                         </div>
                         <button
-                            type="submit"
-                            class="contact-submit-btn">
+                            type="button"
+                            class="contact-submit-btn" onclick="sendEmail()">
                             <i class="fa-regular fa-paper-plane"></i>
                             Submit Message
                         </button>

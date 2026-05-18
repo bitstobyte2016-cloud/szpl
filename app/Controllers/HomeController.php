@@ -49,43 +49,41 @@ class HomeController extends BaseController
     
     public function sendQuery()
     {
-        $email =\Config\Services::email();
+        error_reporting(E_ALL);
+        ini_set('display_errors', 1);
+        $email = \Config\Services::email();
 
-        $fullName =$this->request->getPost('full_name');
 
-        $phone =$this->request->getPost('phone');
+        $fullName =$this->request->getPost('name');
+
+        $phone =$this->request->getPost('phno');
 
         $userEmail =$this->request->getPost('email');
 
-        $company =$this->request->getPost('company');
+        $company =$this->request->getPost('comp');
 
-        $message =$this->request->getPost('message');
+        $message =$this->request->getPost('msg');
 
-        $body = " Received new query for website. Details are as follows : 
 
-            Full Name: {$fullName}
-
-            Phone Number: {$phone}
-
-            Email Address: {$userEmail}
-
-            Company: {$company}
-
-            Message:
-
-            {$message}";
-
+        $email->setFrom('website@swasticzinc.com','Swastic Zinc Website');
         $email->setTo('support@swasticzinc.com');
-        $email->setCC("aradhana@swasticzinc.com");
+        $email->setCC('aradhana@swasticzinc.com');
+        $email->setReplyTo($userEmail,$fullName);
+        $email->setSubject('New Query From Website');
 
-        $email->setSubject('New Website Query' );
+        $body = "New Website Query
+            Full Name:{$fullName}
+            Phone Number:{$phone}
+            Email Address:{$userEmail}
+            Company:{$company}
+            Message:{$message}";
 
-        $email->setMessage( nl2br($body));
+        $email->setMessage($body);
 
         if ($email->send()) {
-            return $this->response->setJSON(['success' => true]);
+            return "Email sent successfully";
+        } else {
+            return "Email could not be sent.";
         }
-
-        return $this->response->setJSON(['success' => false]);
     }
 }

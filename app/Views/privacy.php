@@ -20,6 +20,12 @@
         rel="stylesheet"
         href="/css/theme.css"
     >
+    
+    <link
+    rel="icon"
+    type="image/png"
+    href="/Images/logo_trans1.png" >
+    
 </head>
 <body>
 

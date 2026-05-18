@@ -15,6 +15,6 @@ $routes->get('/policy','HomeController::policy');
 $routes->get('/terms','HomeController::terms');
 
 $routes->post(
-    'send-contact-query',
+    'send-query',
     'HomeController::sendQuery'
 );

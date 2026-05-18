@@ -135,7 +135,7 @@ h6 {
 }
 
 .page-content {
-  padding: var(--content-padding) 20px;
+  padding: var(--content-padding) 0;
 }
 
 .section {
@@ -1642,7 +1642,7 @@ h6 {
   left: 0;
 
   width: 100%;
-  height: 120px;
+  height: 180px;
 
   overflow: hidden;
 
@@ -1739,6 +1739,7 @@ h6 {
   display: flex;
 
   width: 100%;
+  height:100%;
 
   margin-bottom: -120px;
 
@@ -1970,7 +1971,7 @@ h6 {
 
 .story-text-third {
   top: 30%;
-  left: 20%;
+  left: 23%;
 
   transform: translateY(-5%);
 
@@ -2013,6 +2014,9 @@ h6 {
 
   width: 100%;
   height: 700px;
+  
+  margin: 0;
+  padding: 0;
 
   overflow: hidden;
 
@@ -2558,7 +2562,7 @@ h6 {
 ======================================== */
 
 .sus-strip-section {
-  width: 100vw;
+  width: 100%;
 
   padding:
     42px
@@ -2624,7 +2628,7 @@ h6 {
 .products-banner-section {
   position: relative;
 
-  width: 100vw;
+  width: 100%;
   height: 620px;
 
   overflow: hidden;
@@ -2761,7 +2765,7 @@ h6 {
 ======================================== */
 
 .products-main-section {
-  width: 100vw;
+  width: 100%;
 
   padding:
     90px
@@ -3334,7 +3338,7 @@ h6 {
 .contact-banner-section {
   position: relative;
 
-  width: 100vw;
+  width: 100%;
   height: 750px;
 
   overflow: hidden;

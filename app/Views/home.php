@@ -10,6 +10,12 @@
 
     <!-- Theme CSS -->
     <link rel="stylesheet" href="/css/theme.css">
+    
+    <link
+    rel="icon"
+    type="image/png"
+    href="/Images/logo_trans1.png" >
+    
 </head>
 
 <body>
@@ -88,7 +94,7 @@
                             Premium quality ZnSO₄·7H₂O suitable for
                             agriculture, industrial and feed applications.
                         </p>
-                        <a href="/products" class="home-product-link">
+                        <a href="/products?product=znso_hepta" class="home-product-link">
                             Explore Product<i class="fa-solid fa-arrow-right"></i>
                         </a>
                     </div>
@@ -105,7 +111,7 @@
                             Efficient copper metal recovery solutions
                             from industrial by-products.
                         </p>
-                        <a href="/products" class="home-product-link">
+                        <a href="/products?product=copper" class="home-product-link">
                             Explore Product<i class="fa-solid fa-arrow-right"></i>
                         </a>
                     </div>
@@ -122,7 +128,7 @@
                             Sustainable recycling of metals
                             for a circular future.
                         </p>
-                        <a href="/products" class="home-product-link">
+                        <a href="/products?product=znso_sol" class="home-product-link">
                             Explore Product<i class="fa-solid fa-arrow-right"></i>
                         </a>
                     </div>
